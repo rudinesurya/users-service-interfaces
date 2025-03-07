@@ -26,6 +26,9 @@ jobs:
         run: npm run build
         continue-on-error: true  # Ignore if there's no build step
 
+      - name: Generate Barrels
+        run: npm run generate-barrels
+
       - name: Publish to GitHub Packages
         run: npm publish --registry=https://npm.pkg.github.com/
         env:

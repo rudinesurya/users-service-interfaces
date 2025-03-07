@@ -2,12 +2,13 @@
   "name": "@rudinesurya/users-service-interfaces",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "build": "tsc",
+    "generate-barrels": "barrelsby --delete --exclude src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -15,6 +16,7 @@
   "description": "",
   "devDependencies": {
     "@types/node": "^22.13.9",
+    "barrelsby": "^2.8.1",
     "typescript": "^5.8.2"
   },
   "dependencies": {
